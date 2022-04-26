@@ -1,0 +1,147 @@
+{% extends "app/layout.html" %}
+{% block content %}
+{% if form != None %}
+ <br><h2>Отправьте, пожалуйта заполненную форму</h2><br>
+  <div>
+    <form method="post">
+    {% csrf_token %}
+    <label for="{{ form.name.id_for_label }}">{{ form.name.label }}:</label>
+    {{ form.name }}<br><br>
+    <label for="{{ form.city.id_for_label }}">{{ form.city.label }}:</label>
+    {{ form.city }}<br>
+    <label for="{{ form.gender.id_for_label }}">{{ form.gender.label }}:</label>
+    {{ form.gender }}
+    <label for="{{ form.job.id_for_label }}">{{ form.job.label }}:</label><br>
+    {{ form.job }}<br><br>
+    <label for="{{ form.coffee.id_for_label }}">{{ form.coffee.label }}:</label><br>
+    {{ form.coffee }}<br><br>
+    <label for="{{ form.notice.id_for_label }}">{{ form.notice.label }}:</label>
+    {{ form.notice }}<br><br>
+    <label for="{{ form.email.id_for_label }}">{{ form.email.label }}:</label>
+    {{ form.email }}<br><br>
+    <label for="{{ form.message.id_for_label }}">{{ form.message.label }}:</label><br>
+    {{ form.message }}<br><br>
+    <input id="submit-form" type="submit" value="Отправить">
+    </form>
+  </div>
+{% else %}
+ <br><h2>Спасибо за предоставленную информацию!</h2>
+ <h3>Вы сообщили о себе следующее:</h3>
+ <ul>
+    <li><span>Имя:</span> {{ data.name }}</li>
+    <li><span>Город:</span> {{ data.city }}</li>
+    <li><span>Пол:</span> {{ data.gender }}</li>
+    <li><span>Работа/хобби:</span> {{ data.job }}</li>
+    <li><span>Кофе:</span> {{ data.coffee }}</li>
+    <li><span>Получать рассылку:</span>
+             {{ data.notice }}
+     </li>
+    <li><span>Ваш e-mail:</span> {{ data.email }}</li>
+    <li><span>Отзыв:</span> {{ data.message }}</li>
+ </ul>
+{% endif %}
+
+<script>
+
+function bu_focus1()
+{
+    $('#bu1').css('background-color', 'gray');
+}
+
+$('#bu1').focus(bu_focus1);
+
+function bu_blur1()
+{
+    $('#bu1').css('background-color', 'white');
+}
+
+    $('#bu1').blur(bu_blur1);
+
+function bu_focus2()
+{
+    $('#bu2').css('background-color', 'gray');
+}
+
+$('#bu2').focus(bu_focus2);
+
+function bu_blur2()
+{
+    $('#bu2').css('background-color', 'white');
+}
+
+    $('#bu2').blur(bu_blur2);
+
+function bu_focus3()
+{
+    $('#bu3').css('background-color', 'gray');
+}
+
+$('#bu3').focus(bu_focus3);
+
+function bu_blur3()
+{
+    $('#bu3').css('background-color', 'white');
+}
+
+    $('#bu3').blur(bu_blur3);
+
+function bu_focus4()
+{
+    $('#bu4').css('background-color', 'gray');
+}
+
+$('#bu4').focus(bu_focus4);
+
+function bu_blur4()
+{
+    $('#bu4').css('background-color', 'white');
+}
+
+$('#bu4').blur(bu_blur4);
+
+function bu_focus5()
+{
+    $('#bu5').css('background-color', 'gray');
+}
+
+$('#bu5').focus(bu_focus5);
+
+function bu_blur5()
+{
+    $('#bu5').css('background-color', 'white');
+}
+
+    $('#bu5').blur(bu_blur5);
+
+ function bu_focus6()
+{
+    $('#bu6').css('background-color', 'gray');
+}
+
+$('#bu6').focus(bu_focus6);
+
+function bu_blur6()
+{
+    $('#bu6').css('background-color', 'white');
+}
+
+    $('#bu6').blur(bu_blur6);
+
+function submitform_mouseover()
+{
+    $('#submit-form').css('color', 'red');
+}
+
+function submitform_mouseout()
+{
+    $('#submit-form').css('color', 'gray');
+}
+
+$('#submit-form').mouseover(submitform_mouseover);
+$('#submit-form').mouseout(submitform_mouseout);
+
+
+
+</script>
+{% endblock %}
+

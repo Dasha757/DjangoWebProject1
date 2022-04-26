@@ -1,0 +1,122 @@
+body {
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+#po {
+    width: 80px;
+    height: 80px;
+}
+
+.images {
+    width: 1000px;
+    height: 900px;
+}
+
+ul {
+    color: black;
+    font-weight: 300;
+    text-align: left;
+}
+
+.navbar-inverse {
+    background-color: burlywood;
+    border-color: burlywood;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: saddlebrown;
+    background-color: burlywood;
+    border-radius: 25%;
+}
+
+h5 {
+    color: saddlebrown;
+}
+
+h1 {
+    color: chocolate;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr {
+    color: saddlebrown;
+    height: 2px;
+    background-color: burlywood;
+}
+
+h2 {
+    text-align: center;
+    color: saddlebrown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.jumbotron {
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: white;
+    background-color: burlywood;
+}
+
+.sub {
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    width: 90px;
+    height: 40px;
+}
+
+body {
+    background-image: url( Coffe.jpeg);
+    color: white;
+}

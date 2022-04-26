@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+    <a href="https://eda.ru/recepty/kofe?page=1" target="_blank"> <img src="{% static 'app/content/Ko.png' %}" class="images" alt="Ko" /></a>
+    <a href="https://1000.menu/catalog/vjpechka" target="_blank"> <img src="{% static 'app/content/Kr.png' %}" class="images" alt="Kr" /></a>
+    <a href="https://www.russianfood.com/recipes/bytype/?fid=45" target="_blank"> <img src="{% static 'app/content/Ch.png' %}" class="images" alt="Ch" /></a>
+{% endblock %}
